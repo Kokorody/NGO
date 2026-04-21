@@ -1,0 +1,300 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Company X</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• NAVIGATION â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<header style="position: sticky; top: 0; z-index: 100;">
+<nav class="nav">
+  <div class="nav__inner">
+    <a class="nav__logo" href="#">Company X</a>
+
+    <!-- Primary nav â€” add <li> here to extend channels -->
+    <ul class="nav__links" id="navLinks">
+      <li><a class="nav__link active" href="#profile">Profile</a></li>
+      <li><a class="nav__link" href="#articles">Articles</a></li>
+      <li><a class="nav__link" href="#content">Content</a></li>
+      <li><a class="nav__link" href="#events">Events</a></li>
+    </ul>
+
+    <a class="nav__cta" href="#contact">Get in Touch</a>
+
+    <!-- Mobile hamburger -->
+    <button class="nav__hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <!-- Mobile dropdown -->
+  <div class="nav__mobile-menu" id="mobileMenu">
+    <a class="nav__mobile-link" href="#profile">Profile</a>
+    <a class="nav__mobile-link" href="#articles">Articles</a>
+    <a class="nav__mobile-link" href="#content">Content</a>
+    <a class="nav__mobile-link" href="#events">Events</a>
+    <a class="nav__mobile-cta" href="#contact">Get in Touch</a>
+  </div>
+</nav>
+</header>
+
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• HERO / PROFILE â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<section id="profile" class="hero">
+  <div class="hero__inner">
+    <!-- Left: Copy -->
+    <div class="hero__copy">
+      <p class="eyebrow">Lorem ipsum dolor sit amet</p>
+      <h1 class="hero__heading">Defining the Future of Company Systems.</h1>
+      <p class="hero__body">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer iaculis porta
+        purus non blandit. Vivamus viverra eu libero et bibendum. Sed at blandit lorem.
+        Nunc condimentum augue, quis molestie mauris. Suspendisse sodales mi blandit
+        magna placerat.
+      </p>
+      <div class="hero__actions">
+        <a href="#contact" class="btn-primary">Explore Profile</a>
+        <a href="#about" class="btn-text">Our Method</a>
+      </div>
+    </div>
+
+    <!-- Right: Media -->
+    <div class="hero__media">
+      <!-- Photo placeholder â€” replace src with real image -->
+      <div class="hero__photo">
+        <img src="" alt="Company X building" onerror="this.style.display='none'" />
+        <!-- Architectural photo placeholder -->
+        <div style="width:100%;height:100%;background:linear-gradient(135deg,#c8d4de 0%,#8fa4b8 60%,#607d93 100%);display:flex;align-items:center;justify-content:center;">
+          <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="8" y="20" width="10" height="36" fill="rgba(255,255,255,0.3)"/>
+            <rect x="22" y="12" width="10" height="44" fill="rgba(255,255,255,0.45)"/>
+            <rect x="36" y="16" width="10" height="40" fill="rgba(255,255,255,0.3)"/>
+            <rect x="50" y="24" width="8" height="32" fill="rgba(255,255,255,0.2)"/>
+            <line x1="8" y1="56" x2="58" y2="56" stroke="rgba(255,255,255,0.5)" stroke-width="1.5"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Video thumbnail -->
+      <div class="hero__video-thumb">
+        <p class="hero__video-label">Video Preview</p>
+        <div class="hero__play-btn">
+          <svg width="12" height="14" viewBox="0 0 12 14" fill="none">
+            <path d="M1 1.5L11 7L1 12.5V1.5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• ARTICLES â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<section id="articles" class="section reveal">
+  <div class="section__header">
+    <p class="eyebrow">Insights</p>
+    <h2 class="section__title">Articles</h2>
+  </div>
+
+  <!-- Grid shell â€” data injected by CMS -->
+  <div class="articles__grid">
+
+    <!-- Card 1 -->
+    <article class="article-card">
+      <div class="empty-placeholder article-card__img"></div>
+      <div class="empty-lines article-card__meta">
+        <div class="empty-line short"></div>
+        <div class="empty-line mid"></div>
+        <div class="empty-line mid"></div>
+        <div class="empty-line short"></div>
+      </div>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="article-card">
+      <div class="empty-placeholder article-card__img"></div>
+      <div class="empty-lines article-card__meta">
+        <div class="empty-line short"></div>
+        <div class="empty-line"></div>
+        <div class="empty-line mid"></div>
+        <div class="empty-line short"></div>
+      </div>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="article-card">
+      <div class="empty-placeholder article-card__img"></div>
+      <div class="empty-lines article-card__meta">
+        <div class="empty-line short"></div>
+        <div class="empty-line"></div>
+        <div class="empty-line mid"></div>
+        <div class="empty-line short"></div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• CONTENT â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<section id="content" class="section content-section reveal">
+  <div class="section__header">
+    <p class="eyebrow">Curated Mediums</p>
+  </div>
+
+  <!-- Tab bar -->
+  <div class="content__tabs">
+    <button class="content__tab active" onclick="setTab(this)">Content</button>
+    <button class="content__tab" onclick="setTab(this)">Photos</button>
+    <button class="content__tab" onclick="setTab(this)">Video</button>
+  </div>
+
+  <!-- Two-column layout shell -->
+  <div class="content__grid container">
+    <!-- Sidebar: text placeholders -->
+    <div class="content__sidebar">
+      <div class="content__sidebar-header empty-lines" style="margin-bottom:8px;">
+        <div class="empty-line short" style="height:8px;"></div>
+        <div class="empty-line mid" style="height:8px;"></div>
+        <div class="empty-line short" style="height:8px;"></div>
+      </div>
+      <div class="content-card" style="aspect-ratio:1/1;">
+        <!-- Image placeholder icon -->
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#6B7C93" stroke-width="1.5">
+          <rect x="3" y="3" width="18" height="18" rx="2"/>
+          <circle cx="8.5" cy="8.5" r="1.5"/>
+          <path d="M21 15l-5-5L5 21"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Right: media cards -->
+    <div style="display:flex;flex-direction:column;gap:16px;">
+      <div class="content-card" style="aspect-ratio:16/9;">
+        <!-- Video placeholder icon -->
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#6B7C93" stroke-width="1.5">
+          <rect x="2" y="7" width="15" height="10" rx="2"/>
+          <path d="M17 9l5-3v12l-5-3V9z"/>
+        </svg>
+      </div>
+      <div class="content-card" style="aspect-ratio:16/9;">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#6B7C93" stroke-width="1.5">
+          <rect x="3" y="3" width="18" height="18" rx="2"/>
+          <circle cx="8.5" cy="8.5" r="1.5"/>
+          <path d="M21 15l-5-5L5 21"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• EVENTS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<section id="events" class="section events-section reveal">
+  <div class="events__header-row">
+    <div>
+      <p class="eyebrow">Global Gatherings</p>
+      <h2 class="section__title">Events</h2>
+    </div>
+    <a class="events__cal-link" href="#">View Calendar â†’</a>
+  </div>
+
+  <!-- Two-column shell â€” data injected by CMS -->
+  <div class="events__grid">
+
+    <!-- Event card: text-based -->
+    <div class="event-card">
+      <div class="event-card__date"></div>
+      <div class="empty-lines event-card__body">
+        <div class="empty-line short"></div>
+        <div class="empty-line"></div>
+        <div class="empty-line mid"></div>
+        <div class="empty-line short"></div>
+      </div>
+    </div>
+
+    <!-- Event card: media/image-based -->
+    <div class="event-card event-card--media">
+      <div class="event-card__media-bg">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#6B7C93" stroke-width="1.5">
+          <rect x="3" y="4" width="18" height="18" rx="2"/>
+          <line x1="3" y1="9" x2="21" y2="9"/>
+          <line x1="8" y1="2" x2="8" y2="6"/>
+          <line x1="16" y1="2" x2="16" y2="6"/>
+        </svg>
+      </div>
+      <div class="event-card__register">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#102A43" stroke-width="2">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </div>
+      <div class="event-card__inner"></div>
+    </div>
+
+    <!-- Event card: image placeholder with caption -->
+    <div class="event-card event-card--media" style="grid-column:1/-1;min-height:260px;">
+      <div class="event-card__media-bg" style="min-height:260px;">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#6B7C93" stroke-width="1.5">
+          <rect x="3" y="3" width="18" height="18" rx="2"/>
+          <circle cx="8.5" cy="8.5" r="1.5"/>
+          <path d="M21 15l-5-5L5 21"/>
+        </svg>
+      </div>
+      <div class="event-card__register">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#102A43" stroke-width="2">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </div>
+      <div class="event-card__inner"></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• FOOTER â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+<footer class="footer" id="contact">
+  <div class="footer__inner">
+    <!-- Brand -->
+    <div>
+      <p class="footer__logo">Company X</p>
+      <p class="footer__desc">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer iaculis
+        portapurus non blandit. Vivamus viverra eu blandit lorem.
+      </p>
+    </div>
+
+    <!-- Navigation links â€” add channels here to mirror the nav -->
+    <div>
+      <p class="footer__col-title">Navigation</p>
+      <ul class="footer__links">
+        <li><a class="footer__link" href="#profile">Profile</a></li>
+        <li><a class="footer__link" href="#articles">Articles</a></li>
+        <li><a class="footer__link" href="#content">Content</a></li>
+        <li><a class="footer__link" href="#events">Events</a></li>
+        <li><a class="footer__link" href="#">Privacy Policy</a></li>
+        <li><a class="footer__link" href="#">Terms of Service</a></li>
+      </ul>
+    </div>
+
+    <!-- Connect -->
+    <div>
+      <p class="footer__col-title">Connect</p>
+      <ul class="footer__links">
+        <li><a class="footer__link" href="#">Press Kit</a></li>
+        <li><a class="footer__link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <span>Â© 2025 Company X. All rights reserved.</span>
+    <span>Built for impact.</span>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+
+</body>
+</html>
